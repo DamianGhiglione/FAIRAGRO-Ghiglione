@@ -75,7 +75,7 @@ label.logo{
 a:hover{
     color: orange;
     background-color: gray;
-
+    transition: .5s;
 }
 
 .checkbtn{
@@ -126,7 +126,7 @@ a:hover{
         top: 80px;
         left: -100%;
         text-align: center;
-        
+        transition: all .5s;
     }
     .menu ul li{
         display: block;
