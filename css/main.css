@@ -70,13 +70,21 @@ label.logo{
     text-transform: uppercase;
 }
 .activo{
-    color: orange;
     background-color: gray;
 }
 a:hover{
     color: orange;
     background-color: gray;
-    transition: .5s;
+    transition: .8s;
+    transform: scale(1.1,1.1);
+}
+
+.menu ul li a:hover{
+    color: orange;
+    background-color: gray;
+    border-radius: 20px;
+    transition: .8s;
+    transform: scale(1.1,1.1);
 }
 
 .checkbtn{
@@ -127,7 +135,7 @@ a:hover{
         top: 80px;
         left: -100%;
         text-align: center;
-        transition: all .5s;
+        transition: all .8s;
     }
     .menu ul li{
         display: block;
@@ -138,7 +146,7 @@ a:hover{
         font-size: 25px;
     }
     a:hover,a.active{
-        background: none;
+        background: gray;
         color: orange;
     }
     #check:checked ~ ul{
