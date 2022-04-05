@@ -7,7 +7,8 @@
 
 html{
     font-size: 62.5%;
-    background-color: rgb(238, 238, 238);
+    /*background-color: rgb(238, 238, 238);*/
+    background-image: linear-gradient(lightgray, rgb(131, 131, 131));
     width: 100%;
     
 }
@@ -319,6 +320,7 @@ footer{
     "volverArriba volverArriba"
     "mapa contacto"
     "copi copi";
+    align-items: center
 }
 
 .contacto{
