@@ -108,6 +108,11 @@ a:hover{
     .menu ul li a{
         font-size: 16px;
     }
+
+    .noticia img{
+        width: 60%;
+        height: 40%;
+    }
 }
 @media (max-width: 1132px){
     label.logo{
@@ -151,6 +156,71 @@ a:hover{
     }
     #check:checked ~ ul{
         left: 0;
+    }
+
+    .mapa iframe{
+        width: 400px;
+        height: 200px;
+    }
+
+    .noticias{
+        display: grid;
+        grid-template-areas: "noticias";
+    }
+
+    .noticia img{
+        width: 80%;
+        height: 60%;
+        object-fit: cover;
+    }
+}
+@media (max-width:768px){
+    .galeria{
+        margin-left: 5px;
+        margin-right: 5px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    }
+}
+@media (max-width:480px){
+    .formulario{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 25%    ;
+        width: 50%;
+    }
+    .formulario h2{
+        font-size: 30px;
+    }
+    .formulario input{
+        font-size: 20px;
+    }
+    .formulario textarea{
+        font-size: 20px;
+    }
+}
+@media (min-width: 320px){
+    .grupoFairagro-texto{
+        font-size: 23px;
+    }
+
+    .servicios-descripcion{
+        font-size: 21px;
+    }
+    .servi{
+        align-items: center;
+    }
+
+    .pagServicios-descripcion{
+        font-size: 25px;
+        margin: 0 10px;      
+    }
+    
+    .noticia h3{
+        font-size: 30px;
+    }
+    .noticia p{
+        font-size: 25px;
     }
 }
 
@@ -215,12 +285,7 @@ a:hover{
 .grupoFairagro{
     grid-area: grupoF;
 }
-@media (min-width: 320px){
-    .grupoFairagro-texto{
-        font-size: 23px;
-    }
 
-}
 /* ------------------------------ */
 /* -----------SERVICIOS-----------*/
 /* ------------------------------ */
@@ -304,14 +369,6 @@ h2{
 
 }
 
-@media (min-width: 320px){
-    .servicios-descripcion{
-        font-size: 21px;
-    }
-    .servi{
-        align-items: center;
-    }
-}
 
 
 /* -------------------------------*/
@@ -376,14 +433,6 @@ footer{
     grid-area: copi;
 }
 
-@media (max-width: 858px){
-    .mapa iframe{
-        width: 400px;
-        height: 200px;
-    }
-}
-
-
 
 /* -------------------------------*/
 /* ----------PagServicios---------*/
@@ -445,13 +494,6 @@ footer{
     color: black;
 }
 
-@media (min-width: 320px){
-    .pagServicios-descripcion{
-        font-size: 25px;
-        margin: 0 10px;
-        
-    }
-}
 
 /* -------------------------------*/
 /* ----------PagConocenos---------*/
@@ -499,14 +541,7 @@ footer{
     
 }
 
-@media (max-width:768px){
-    .galeria{
-        margin-left: 5px;
-        margin-right: 5px;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    }
-}
+
 
 /* -------------------------------*/
 /* ----------PagContactos---------*/
@@ -550,23 +585,7 @@ input, textarea{
     border-radius: 60px;
 }
 
-@media (max-width:480px){
-    .formulario{
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-left: 25%    ;
-        width: 50%;
-    }
-    .formulario h2{
-        font-size: 30px;
-    }
-    .formulario input{
-        font-size: 20px;
-    }
-    .formulario textarea{
-        font-size: 20px;
-    }
-}
+
 /* -------------------------------*/
 /* ----------PagNoticias----------*/
 /* -------------------------------*/
@@ -610,30 +629,13 @@ input, textarea{
 }
 
 @media (max-width: 1340px){
-    .noticia img{
-        width: 60%;
-        height: 40%;
-    }
+    
 }
 
 @media (max-width: 858px){
-    .noticias{
-        display: grid;
-        grid-template-areas: "noticias";
-    }
-
-    .noticia img{
-        width: 80%;
-        height: 60%;
-        object-fit: cover;
-    }
+    
 }
 
 @media (min-width: 320px){
-    .noticia h3{
-        font-size: 30px;
-    }
-    .noticia p{
-        font-size: 25px;
-    }
+    
 }
