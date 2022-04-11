@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-
-    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
     
 <body>
     <!--MENU-->
-    <div class="header">
+    <div class="header row">
         <nav class="menu">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
@@ -36,7 +36,7 @@
 
     <!--CUERPO-->
     <div class="cuerpo">
-        <div class="grupoFairagro">
+        <div class="grupoFairagro row">
             <h2 class="grupoFairagro-titulo">Grupo FAIRAGRO SRL</h2>
             <p class="grupoFairagro-texto"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum est at qui, ducimus mollitia temporibus fugit ab rerum exercitationem consectetur deleniti magnam impedit molestiae, nam maiores aperiam cum perspiciatis minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque qui consequuntur ea rem maiores hic adipisci temporibus, ratione odio asperiores iusto ipsum dicta harum dignissimos perferendis minus praesentium repellat sequi!</p>
             <div class="grupoFairagro-info">
@@ -47,11 +47,11 @@
 
         <h2>Nuestros Servicios</h2>
 
-        <div class="servicios">
+        <div class="servicios row">
             <h3 class="servicios-titulo">Cocecha</h3>
-            <div class="servi">
-                <img src="Imagenes/S660.jpg" alt="John Deere S660" class="imagen">
-                <div>
+            <div class="servi row align-items-center">
+                <img src="Imagenes/S660.jpg" alt="John Deere S660" class="imagen col">
+                <div class="col-9">
                     <p class="servicios-descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quas iure suscipit in omnis corporis quidem odio, laboriosam repellendus veritatis voluptas tempora accusantium officiis, dolor voluptatum provident, eos molestiae hic? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere officiis sapiente delectus nemo laboriosam, quo sint rem nobis fuga nam molestias maxime asperiores animi voluptas quaerat qui eum eius voluptatibus!</p>
                     <li><a href="Paginas/servicios.html#cocecha">Mas Info</a></li>
                 </div>
@@ -59,9 +59,9 @@
             
             
             <h3 class="servicios-titulo">Siembra</h3>
-            <div class="servi">
-                <img src="Imagenes/Sembradora.png" alt="Sembradora Apache" class="imagen">
-                <div>
+            <div class="servi row align-items-center">
+                <img src="Imagenes/Sembradora.png" alt="Sembradora Apache" class="imagen col">
+                <div class="col-9">
                     <p class="servicios-descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure minima porro quisquam dignissimos magnam adipisci repellendus corporis nostrum cupiditate incidunt consequatur, doloribus temporibus, nulla soluta quaerat minus cumque voluptas id! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere officiis sapiente delectus nemo laboriosam, quo sint rem nobis fuga nam molestias maxime asperiores animi voluptas quaerat qui eum eius voluptatibus!</p>
                     <li><a href="Paginas/servicios.html#siembra">Mas info</a></li>
                 </div>
@@ -69,9 +69,9 @@
             
             
             <h3 class="servicios-titulo">Pulverizacion</h3>
-            <div class="servi">
-                <img src="Imagenes/Pulverizadora.jpg" alt="Pulverizadora John Deere" class="imagen">
-                <div>
+            <div class="servi row align-items-center">
+                <img src="Imagenes/Pulverizadora.jpg" alt="Pulverizadora John Deere" class="imagen col">
+                <div class="col-9">
                     <p class="servicios-descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis distinctio eligendi voluptatum minus? Itaque recusandae aut cupiditate accusantium velit, officia cumque, consequuntur deserunt esse sapiente sequi accusamus, tempora commodi maiores! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere officiis sapiente delectus nemo laboriosam, quo sint rem nobis fuga nam molestias maxime asperiores animi voluptas quaerat qui eum eius voluptatibus!</p>
                     <li><a href="Paginas/servicios.html#pulverizacion">Mas Info</a></li>
                 </div>
@@ -79,9 +79,9 @@
             
             
             <h3 class="servicios-titulo">Fertilizacion</h3>
-            <div class="servi">
-                <img src="Imagenes/Fertilizadora.png" alt="Fertilizadora Fertec" class="imagen">
-                <div>
+            <div class="servi row">
+                <img src="Imagenes/Fertilizadora.png" alt="Fertilizadora Fertec" class="imagen col">
+                <div class="col-9">
                     <p class="servicios-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fuga nesciunt vero rerum, necessitatibus porro eum, id possimus incidunt commodi, voluptates odit error eius consequatur? Voluptates velit rem error molestias? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sequi facere labore sapiente repudiandae provident, deserunt eveniet fugiat cupiditate dicta. Officiis autem tempora reiciendis. Et similique ratione veritatis cumque eaque. </p>
                     <li><a href="Paginas/servicios.html#fertilizacion">Mas Info</a></li>
                 </div>
@@ -91,18 +91,18 @@
     </div>
 
     <!--FOOTER-->
-    <footer class="footer">
-        <div class="volverArriba">
+    <footer class="footer row justify-content-evenly">
+        <div class="volverArriba col-12">
             <a href="#inicio">Volver al Inicio</a>
         </div>
         
 
-        <div class="mapa">
+        <div class="mapa col align-self-center">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13423.194483684674!2d-62.5030382!3d-32.7445376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2891e97d02a00c0b!2sFAIRAGRO%20S.R.L.!5e0!3m2!1ses-419!2sar!4v1646846735080!5m2!1ses-419!2sar" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     
-        <div class="contacto">
-            <h4>Contacto</h4>
+        <div class="contacto col align-self-center">
+            <h2>Contacto</h2>
             <li>Tel: 123456</li>
             <li>Cel: 1234 123456</li>
             <li>Mail: fairagro@hotmail.com</li>

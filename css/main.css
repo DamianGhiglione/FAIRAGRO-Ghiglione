@@ -4,101 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&family=Nanum+Gothic&display=swap');
 
-
-html{
-    font-size: 62.5%;
-    /*background-color: rgb(238, 238, 238);*/
-    background-image: linear-gradient(lightgray, rgb(131, 131, 131));
-    width: 100%;
-    
-}
-
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
-
-body{
-    display: grid;
-    grid-template-areas: "header"
-    "cuerpo"
-    "footer";
-}
-
 /* ------------------------------ */
-/* ------------HEADER-------------*/
+/* ---------MEDIA QUERY-----------*/
 /* ------------------------------ */
-
-label.logo{
-    font-family: 'League Spartan', sans-serif;
-    color: green;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-}
-
-/* ------------------------------ */
-/* -------------MENU--------------*/
-/* ------------------------------ */
-
-.menu{
-    background: lightgray;
-    height: 80px;
-    width: 100%;
-    border-radius: 10px;
-    border: solid 1px yellow;
-}
-.menu ul{
-    float: right;
-    margin-right: 20px;
-    font-family: 'League Spartan', sans-serif;
-}
-.menu ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-.menu ul li a{
-    color: black;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-.activo{
-    background-color: gray;
-}
-a:hover{
-    color: orange;
-    background-color: gray;
-    transition: .8s;
-    transform: scale(1.1,1.1);
-}
-
-.menu ul li a:hover{
-    color: orange;
-    background-color: gray;
-    border-radius: 20px;
-    transition: .8s;
-    transform: scale(1.1,1.1);
-}
-
-.checkbtn{
-    font-size: 30px;
-    color: yellow;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
-}
 
 @media (max-width: 1253px){
     label.logo{
@@ -121,6 +29,18 @@ a:hover{
     }
     .menu ul li a{
         font-size: 12px;
+    }
+}
+@media (min-width: 1200px){
+    .carousel-item img{
+        width: 90%;
+        object-fit: cover;
+    }
+}
+@media (min-width: 1057px){
+    .imagen{
+        height: 25px;
+        width: 50px;
     }
 }
 @media (max-width: 858px){
@@ -224,6 +144,104 @@ a:hover{
     }
 }
 
+
+html{
+    font-size: 62.5%;
+    /*background-color: rgb(238, 238, 238);*/
+    /*background-image: linear-gradient(lightgray, rgb(131, 131, 131));*/
+    width: 100%;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "header"
+    "cuerpo"
+    "footer";
+}
+
+/* ------------------------------ */
+/* ------------HEADER-------------*/
+/* ------------------------------ */
+
+label.logo{
+    font-family: 'League Spartan', sans-serif;
+    color: green;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+/* ------------------------------ */
+/* -------------MENU--------------*/
+/* ------------------------------ */
+
+.menu{
+    background: lightgray;
+    height: 80px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1px yellow;
+}
+.menu ul{
+    float: right;
+    margin-right: 20px;
+    font-family: 'League Spartan', sans-serif;
+}
+.menu ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.menu ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.activo{
+    background-color: gray;
+}
+a:hover{
+    color: orange;
+    background-color: gray;
+    transition: .8s;
+    transform: scale(1.1,1.1);
+}
+
+.menu ul li a:hover{
+    color: orange;
+    background-color: gray;
+    border-radius: 20px;
+    transition: .8s;
+    transform: scale(1.1,1.1);
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: yellow;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+
 /* ------------------------------ */
 /* ------------CUERPO-------------*/
 /* ------------------------------ */
@@ -306,12 +324,12 @@ h2{
     font-family: 'League Spartan', sans-serif;
 }
 
-.servi{
+/*.servi{
     display: grid;
     background-color: white;
     border-radius: 30px;
     grid-template-areas: "imagen descripcion descripcion descripcion";
-}
+}*/
 
 
 .servicios li{
@@ -339,6 +357,7 @@ h2{
 }
 
 .servicios-titulo{
+    margin: 10px 0px;
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
@@ -352,7 +371,7 @@ h2{
 
 .servicios-descripcion{
     margin:40px 10px;
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Nanum Gothic', sans-serif;
     text-align: left;
     color: black;
@@ -394,12 +413,13 @@ footer{
     font-size: 25px;
     color: rgba(0, 128, 0, 0.644);
     font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
     grid-area: contacto;
 }
 
 .volverArriba{
-    padding-top: 40px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 20px;
     text-align: center;
     font-size: 25px;
     font-family: 'League Spartan', sans-serif;
@@ -512,12 +532,11 @@ footer{
     font-family: 'League Spartan', sans-serif;
 }
 
-.galeria{
+/*.galeria{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 5px;
-
-}
+}*/
 
 .galeria-titulo{
     background-color: rgb(224, 224, 224);
@@ -532,14 +551,6 @@ footer{
     font-family: 'League Spartan', sans-serif;
 }
 
-.galeria img{
-    width: 100%;
-    border-radius: 30px;
-    vertical-align: top;
-    height: 300px;
-    object-fit: cover;
-    
-}
 
 
 
@@ -626,16 +637,4 @@ input, textarea{
     width: 600px;
     height: 450px;
     object-fit: cover;
-}
-
-@media (max-width: 1340px){
-    
-}
-
-@media (max-width: 858px){
-    
-}
-
-@media (min-width: 320px){
-    
 }
