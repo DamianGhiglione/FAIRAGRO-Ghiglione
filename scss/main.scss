@@ -1,0 +1,587 @@
+$color-main: rgba(0, 128, 0, 0.644);
+$background-color: lightgray;
+$footer-background-color: rgb(179, 179, 179);
+$hover-background-color:gray;
+$font-primary: 'League Spartan', sans-serif;
+$font-secondary: 'Nanum Gothic', sans-serif;
+
+html{
+    font-size: 62.5%;
+    /*background-color: rgb(238, 238, 238);*/
+    /*background-image: linear-gradient(lightgray, rgb(131, 131, 131));*/
+    width: 100%;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "header"
+    "cuerpo"
+    "footer";
+}
+
+/* ------------------------------ */
+/* ------------HEADER-------------*/
+/* ------------------------------ */
+
+label.logo{
+    font-family: $font-primary;
+    color: green;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+/* ------------------------------ */
+/* -------------MENU--------------*/
+/* ------------------------------ */
+
+.menu{
+    background: $background-color;
+    height: 80px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1px yellow;
+    ul{
+        float: right;
+        margin-right: 20px;
+        font-family: $font-primary;
+        li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+            a{
+                color: black;
+                font-size: 17px;
+                padding: 7px 13px;
+                border-radius: 3px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+/*.menu ul{
+    float: right;
+    margin-right: 20px;
+    font-family: $font-primary;
+}
+.menu ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.menu ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}*/
+.activo{
+    background-color: $hover-background-color;
+}
+a:hover{
+    color: orange;
+    background-color: $hover-background-color;
+    transition: .8s;
+    transform: scale(1.1,1.1);
+}
+
+.menu ul li a:hover{
+    color: orange;
+    background-color: gray;
+    border-radius: 20px;
+    transition: .8s;
+    transform: scale(1.1,1.1);
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: yellow;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/* ------------------------------ */
+/* ------------CUERPO-------------*/
+/* ------------------------------ */
+.cuerpo{
+    grid-area: cuerpo;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}   
+
+/* ------------------------------ */
+/* --------GRUPO FAIRAGRO---------*/
+/* ------------------------------ */
+
+.grupoFairagro-titulo{
+    background-color: rgb(224, 224, 224);
+    border: 2px solid;
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    color: $color-main;
+    font-family: $font-primary;
+
+}
+
+.grupoFairagro-texto{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-family: $font-secondary;
+}
+
+.grupoFairagro-info{
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-family: $font-secondary;
+}
+
+.grupoFairagro-info a{
+    padding: 8px;
+    border: solid 1px black;
+    background-color: gainsboro;
+    border-radius: 10px;
+    color: black;
+}
+.grupoFairagro-info a:hover{
+    color: orange;
+    background-color: gray;
+    border-radius: 60px;
+}
+
+.grupoFairagro{
+    grid-area: grupoF;
+}
+
+/* ------------------------------ */
+/* -----------SERVICIOS-----------*/
+/* ------------------------------ */
+.servicios{
+    grid-area: servicios;
+}
+
+h2{
+    background-color: rgb(224, 224, 224);
+    border: 2px solid;
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    color: $color-main;
+    font-family: $font-primary;
+}
+
+/*.servi{
+    display: grid;
+    background-color: white;
+    border-radius: 30px;
+    grid-template-areas: "imagen descripcion descripcion descripcion";
+}*/
+
+
+.servicios li{
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 15px;
+    font-family: $font-secondary;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+
+    a{
+        padding: 8px;
+        border: solid 1px black;
+        background-color: gainsboro;
+        border-radius: 10px;
+        color: black;
+    }
+}
+
+/*.servicios li a{
+    padding: 8px;
+    border: solid 1px black;
+    background-color: gainsboro;
+    border-radius: 10px;
+    color: black;
+}*/
+
+.servicios li a:hover{
+    color: orange;
+    background-color: gray;
+    border-radius: 60px;
+}
+
+.servicios-titulo{
+    margin: 10px 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-family: $font-primary;
+    color: $color-main;
+    border-top: 6px solid green;
+    border-bottom: 6px solid green;
+    border-radius: 6px;
+}
+
+.servicios-descripcion{
+    margin:40px 10px;
+    font-size: 18px;
+    font-family: $font-secondary;
+    text-align: left;
+    color: black;
+    grid-area: descripcion;
+
+}
+
+.imagen{
+    height: 190px;
+    width: 323px;
+    border-radius: 30px;
+    object-fit: cover;
+    grid-area: imagen;
+
+}
+
+/* -------------------------------*/
+/* ------------FOOTER-------------*/
+/* -------------------------------*/
+
+footer{
+    grid-area: footer;
+    background-color: $footer-background-color;
+    border-radius: 10px;
+    border: 2px solid ;
+    display: grid;
+    grid-template-areas: 
+    "volverArriba volverArriba"
+    "mapa contacto"
+    "copi copi";
+    align-items: center
+}
+
+.contacto{
+    padding: 25px 50px;
+    text-decoration: none;
+    font-size: 25px;
+    color: $color-main;
+    font-family: $font-secondary;
+    text-align: center;
+    grid-area: contacto;
+}
+
+.volverArriba{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-family: $font-primary;
+    grid-area: volverArriba;
+
+    a{
+        background-color: rgb(162, 189, 162);
+        border: 1px solid;
+        border-radius: 60px;
+        padding: 8px;
+        text-decoration: none;
+        color: $color-main;
+
+    }
+}
+/*.volverArriba a{
+    background-color: rgb(162, 189, 162);
+    border: 1px solid;
+    border-radius: 60px;
+    padding: 8px;
+    text-decoration: none;
+    color: $color-main;
+}*/
+
+.volverArriba a:hover{
+    color: rgb(19, 199, 58);
+    background-color: $hover-background-color;
+    border-radius: 60px;
+}
+
+.mapa{
+    margin-left: 50px;
+    display: inline;
+    grid-area: mapa;
+}
+
+.copy{
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    grid-area: copi;
+}
+
+/* -------------------------------*/
+/* ----------PagServicios---------*/
+/* -------------------------------*/
+/*.guia ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.guia ul li{
+    float: left;
+}
+
+.guia a{
+    margin-left: 5px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 12px 13px;
+}*/
+.guia{
+    /* TEXTO */
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-primary;
+    font-size: 18px;
+    position: absolute;
+    top: 78px;
+
+    a{
+        margin-left: 5px;
+        color: black;
+        text-decoration: none;
+        display: block;
+        padding: 12px 13px;
+    }
+
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            float: left;
+        }
+    }
+}
+.guia a:hover{
+    color: black;
+    background-color: gray;
+    border-radius: 60px;
+} 
+
+.pagServicios-titulo{
+    margin-top: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-family: $font-primary;
+    color: $color-main;
+    border: 6px solid green;
+    border-radius: 6px;
+
+    h2{
+        margin: 5px;
+    }
+}
+
+/*.pagServicios-titulo h2{
+    margin: 5px;
+}*/
+
+.pagServicios-descripcion{
+    font-size: 15px;
+    font-family: $font-secondary;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+
+/* -------------------------------*/
+/* ----------PagConocenos---------*/
+/* -------------------------------*/
+
+.grupoFairagro-personal{
+    background-color: rgb(224, 224, 224);
+    border: 2px solid;
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    color: $color-main;
+    font-family: $font-primary;
+}
+
+/*.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 5px;
+}*/
+
+.galeria-titulo{
+    background-color: rgb(224, 224, 224);
+    border: 2px solid;
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    color: $color-main;
+    font-family: $font-primary;
+}
+
+
+
+
+/* -------------------------------*/
+/* ----------PagContactos---------*/
+/* -------------------------------*/
+
+.formulario{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 35px;
+    
+    h2{
+        font-size: 25px;
+        font-family: $font-primary;
+        color: $color-main;
+    }
+
+    div{
+        padding: 5px;
+    }
+}
+
+/*.formulario h2{
+    font-size: 25px;
+    font-family: $font-primary;
+    color: $color-main;
+}
+
+.formulario div{
+    padding: 5px;
+}*/
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20xp;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+#button{
+    background: $color-main;
+    border-radius: 15px;
+    border: 1px solid;
+}
+
+#button:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(149, 207, 138);
+    border-radius: 60px;
+}
+
+/* -------------------------------*/
+/* ----------PagNoticias----------*/
+/* -------------------------------*/
+
+.noticias{
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "noticia noticia";
+
+    h2{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 25px;
+        font-family: $font-primary;
+        color: $color-main;
+        border-top: 6px solid green;
+        border-bottom: 6px solid green;
+        border-radius: 6px;
+    }
+
+    h3{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-decoration: underline;
+        font-size: 20px;
+        font-family: $font-primary;
+    }
+
+    p{
+        font-size: 15px;
+        font-family: $font-secondary;
+    }
+
+    img{
+        width: 600px;
+        height: 450px;
+        object-fit: cover;
+    }
+}
+
+/*.noticias h2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 25px;
+    font-family: $font-primary;
+    color: $color-main;
+    border-top: 6px solid green;
+    border-bottom: 6px solid green;
+    border-radius: 6px;
+}
+
+.noticias h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: $font-primary;
+}
+
+.noticias p{
+    font-size: 15px;
+    font-family: $font-secondary;
+}
+
+.noticia img{
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+}*/
