@@ -1,0 +1,21 @@
+$color-main: rgba(0, 128, 0, 0.644);
+$background-color: lightgray;
+$titulo-background-color: rgb(224, 224, 224);
+$footer-background-color: rgb(179, 179, 179);
+$hover-background-color:gray;
+$font-primary: 'League Spartan', sans-serif;
+$font-secondary: 'Nanum Gothic', sans-serif;
+$titulo: (
+    background-color: $titulo-background-color,
+    border: 2px solid,
+    border-radius: 30px,
+    padding: 15px 0px,
+    text-align: center,
+    text-decoration: underline,
+    font-size: 30px,
+    color: $color-main,
+    font-family: $font-primary
+);
+@mixin margen($top-bottom,$left-right){
+    margin: $top-bottom, $left-right;
+}

@@ -1,14 +1,10 @@
-$color-main: rgba(0, 128, 0, 0.644);
-$background-color: lightgray;
-$footer-background-color: rgb(179, 179, 179);
-$hover-background-color:gray;
-$font-primary: 'League Spartan', sans-serif;
-$font-secondary: 'Nanum Gothic', sans-serif;
+@import "variables";
+@import "medias-queries";
+
+/* tengo que hacer un mapa un extend y un mixin*/
 
 html{
     font-size: 62.5%;
-    /*background-color: rgb(238, 238, 238);*/
-    /*background-image: linear-gradient(lightgray, rgb(131, 131, 131));*/
     width: 100%;
     
 }
@@ -69,23 +65,7 @@ label.logo{
         }
     }
 }
-/*.menu ul{
-    float: right;
-    margin-right: 20px;
-    font-family: $font-primary;
-}
-.menu ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-.menu ul li a{
-    color: black;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}*/
+
 .activo{
     background-color: $hover-background-color;
 }
@@ -133,16 +113,10 @@ a:hover{
 /* ------------------------------ */
 
 .grupoFairagro-titulo{
-    background-color: rgb(224, 224, 224);
-    border: 2px solid;
-    border-radius: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 30px;
-    color: $color-main;
-    font-family: $font-primary;
+    @each $var, $val in $titulo {
+        #{$var}: $val;
+        
+    }
 
 }
 
@@ -186,24 +160,10 @@ a:hover{
 }
 
 h2{
-    background-color: rgb(224, 224, 224);
-    border: 2px solid;
-    border-radius: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 30px;
-    color: $color-main;
-    font-family: $font-primary;
+    @extend .grupoFairagro-titulo
 }
 
-/*.servi{
-    display: grid;
-    background-color: white;
-    border-radius: 30px;
-    grid-template-areas: "imagen descripcion descripcion descripcion";
-}*/
+
 
 
 .servicios li{
@@ -224,13 +184,6 @@ h2{
     }
 }
 
-/*.servicios li a{
-    padding: 8px;
-    border: solid 1px black;
-    background-color: gainsboro;
-    border-radius: 10px;
-    color: black;
-}*/
 
 .servicios li a:hover{
     color: orange;
@@ -239,7 +192,7 @@ h2{
 }
 
 .servicios-titulo{
-    margin: 10px 0px;
+    @include margen(10px , 0px);
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
@@ -252,7 +205,7 @@ h2{
 }
 
 .servicios-descripcion{
-    margin:40px 10px;
+    @include margen(40px , 10px);
     font-size: 18px;
     font-family: $font-secondary;
     text-align: left;
@@ -315,14 +268,7 @@ footer{
 
     }
 }
-/*.volverArriba a{
-    background-color: rgb(162, 189, 162);
-    border: 1px solid;
-    border-radius: 60px;
-    padding: 8px;
-    text-decoration: none;
-    color: $color-main;
-}*/
+
 
 .volverArriba a:hover{
     color: rgb(19, 199, 58);
@@ -346,23 +292,7 @@ footer{
 /* -------------------------------*/
 /* ----------PagServicios---------*/
 /* -------------------------------*/
-/*.guia ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
-.guia ul li{
-    float: left;
-}
-
-.guia a{
-    margin-left: 5px;
-    color: black;
-    text-decoration: none;
-    display: block;
-    padding: 12px 13px;
-}*/
 .guia{
     /* TEXTO */
     text-align: center;
@@ -411,9 +341,6 @@ footer{
     }
 }
 
-/*.pagServicios-titulo h2{
-    margin: 5px;
-}*/
 
 .pagServicios-descripcion{
     font-size: 15px;
@@ -441,11 +368,6 @@ footer{
     font-family: $font-primary;
 }
 
-/*.galeria{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 5px;
-}*/
 
 .galeria-titulo{
     background-color: rgb(224, 224, 224);
@@ -486,15 +408,6 @@ footer{
     }
 }
 
-/*.formulario h2{
-    font-size: 25px;
-    font-family: $font-primary;
-    color: $color-main;
-}
-
-.formulario div{
-    padding: 5px;
-}*/
 
 input, textarea{
     width: 100%;
@@ -555,33 +468,3 @@ input, textarea{
         object-fit: cover;
     }
 }
-
-/*.noticias h2{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 25px;
-    font-family: $font-primary;
-    color: $color-main;
-    border-top: 6px solid green;
-    border-bottom: 6px solid green;
-    border-radius: 6px;
-}
-
-.noticias h3{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-decoration: underline;
-    font-size: 20px;
-    font-family: $font-primary;
-}
-
-.noticias p{
-    font-size: 15px;
-    font-family: $font-secondary;
-}
-
-.noticia img{
-    width: 600px;
-    height: 450px;
-    object-fit: cover;
-}*/
