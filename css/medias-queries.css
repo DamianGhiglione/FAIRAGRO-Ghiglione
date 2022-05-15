@@ -27,12 +27,6 @@
         object-fit: cover;
     }
 }
-@media (min-width: 1057px){
-    .imagen{
-        height: 25px;
-        width: 50px;
-    }
-}
 @media (max-width: 858px){
     label.logo{
         font-size: 30px;
